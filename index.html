@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="index.css"></links>
+
+<title>SURVEY FORM</title>
+
+<body>
+<div class="column"> 
+<h1 id="title">SURVEY FORM</h1>
+<p class="description">Congratulations on completing Full Stack Online Program of freeCodeCamp </p>
+<hr>
+<p>Note:<em>*</em> Required</p>
+
+<form name="surveyform"  onsubmit="return back()" method="post"> 
+ <div class="info">
+
+ <label><em>*</em> First Name:</label><br>
+   <input type="text required" name="FirstName" id="name">
+<br>
+<br>
+   <label><em>*</em> Last Name:</label><br>
+   <input type="text required" name="Lastname" id="lastname">
+<br>
+<br>
+
+ <label><em>*</em> Email:</label><br>
+ <input type="text required" name="EMail" id="email" placeholder="Enter your email-address">
+ <br>
+ <br>
+
+ <label>Phone:</label><br>
+ <input type="number" textarea cols="20" rows="10"
+ name="phone" id="phone">
+ <br>
+ <br>
+ 
+ <label>LinkedIn Profile</label><br>
+ <input type="text" name="linkedIn" id="linkedIn">
+ <br>
+ <br>
+
+ <label>Website</label><br>
+ <input type="text" name="Website" id="website">
+<br>
+<br>
+ 
+
+    
+    <p>How likely is it that you would recommend us to a friend?</p>
+ 
+    <ul style="list-style-type: none">
+        <li class="radio"><label>Definitely<input type="radio" id="recommend-definitely" name="recommend" value="1" class="recommend">             </label></li>
+        <li class="radio"><label>Maybe<input type="radio" id="recommend-maybe" name="recommend" value="2" class="recommend"></label>               </li>
+        <li class="radio"><label>Not Sure<input type="radio" id="recommend-not-sure" name="recommend" value="3" class="recommend">                 </label></li>
+
+
+
+    <p class>Any comments or suggestions:<br><br>  
+        <textarea cols="150" rows="10" maxlength="100" name="Comment"></textarea></p>
+    <p>
+        <input type="submit" value="send" name="Submit"> 
+        <input type="reset" value="Reset" name="Reset"> 
+    </form>
+</div>
+
+</body>
+<script src="index.js"></script> 
+<!-- <footer>
+    <p class="footertag"> © 2020 by Pratikshya Pandey</p>
+</footer>  -->
+
+</html>
