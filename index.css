@@ -3,36 +3,19 @@ html {
     min-width:100%;
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
+ 
 }
 
 body {
-    min-width:200px ;
+    align-items: center;
     margin-left: 200px;
     margin-right: 200px;
-    min-height: max-content;
-    /* height: fit-content; */
+    padding-left: 30px;
+padding-right: 30px;
     border: 1px solid #CCC;
     border-radius: 1em;
     background-color: white;
-    height: 100%;
 }
-
-.column {
-    background-color: white;
-    padding-left: 10px;
-   padding-right: 10px;
-   height: fit-content;  
-
-}
-.description {
-    text-align: center;
-    font-size: 1.3rem;
-    /* text-transform: capitalize; */
-}
- em {
-    color: red;
-}
-
 #title {
     padding-top: 10px;
     font-size: 1.8em;
@@ -40,10 +23,22 @@ body {
     text-transform: capitalize;
     color: black;
 }
-
-#survey-form {
-
+.description {
+    text-align: center;
+    font-size: 1.3rem;
 }
+em {
+    color: red;
+}
+
+/* textarea {
+    max-width: 350px;
+    max-height: 200px;
+} */
+.rightTab {
+    width: 80%;
+}
+
 input{
     width: 150px;
     height: 20px;
@@ -55,10 +50,9 @@ input{
   margin-left: 10px;
   
 }
-
-.footertag {
-    height: 100px;
-    color: white;
-    text-align: center;
- margin-top: 40px;
-  }
+button {
+    background-color: red;
+    width: 150px;
+    height: 40px;
+   align-content: center;
+}

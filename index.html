@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<link rel="stylesheet" href="index.css"></links>
-
 <title>SURVEY FORM</title>
-
+<link rel="stylesheet" href="index.css"></links>
 <body>
-<div class="column"> 
+
 <h1 id="title">SURVEY FORM</h1>
 <p class="description">Congratulations on completing Full Stack Online Program of freeCodeCamp </p>
 <hr>
+
 <p>Note:<em>*</em> Required</p>
 
-<form name="surveyform"  onsubmit="return back()" method="post"> 
+<form name="surveyform"   method="post" onsubmit="return validateForm()">  
  <div class="info">
 
  <label><em>*</em> First Name:</label><br>
-   <input type="text required" name="FirstName" id="name">
+   <input type="text required" name="FirstName" id="name" placeholder="Enter your first name">
 <br>
 <br>
    <label><em>*</em> Last Name:</label><br>
-   <input type="text required" name="Lastname" id="lastname">
+   <input type="text required" name="Lastname" id="lastname" placeholder="Enter your last-name">
 <br>
 <br>
 
@@ -31,8 +29,8 @@
  <br>
 
  <label>Phone:</label><br>
- <input type="number" textarea cols="20" rows="10"
- name="phone" id="phone">
+ <input type="number"
+ name="Phone" id="phone">
  <br>
  <br>
  
@@ -45,30 +43,19 @@
  <input type="text" name="Website" id="website">
 <br>
 <br>
- 
+ <p><em>*</em> How likely is it that you would recommend us to a friend?</p>
 
-    
-    <p>How likely is it that you would recommend us to a friend?</p>
- 
-    <ul style="list-style-type: none">
-        <li class="radio"><label>Definitely<input type="radio" id="recommend-definitely" name="recommend" value="1" class="recommend">             </label></li>
+        <li class="radio"><label>Definitely<input type="radio" id="recommend-definitely"name="recommend" value="1" class="recommend">             </label></li>
         <li class="radio"><label>Maybe<input type="radio" id="recommend-maybe" name="recommend" value="2" class="recommend"></label>               </li>
         <li class="radio"><label>Not Sure<input type="radio" id="recommend-not-sure" name="recommend" value="3" class="recommend">                 </label></li>
-
-
-
-    <p class>Any comments or suggestions:<br><br>  
-        <textarea cols="150" rows="10" maxlength="100" name="Comment"></textarea></p>
-    <p>
-        <input type="submit" value="send" name="Submit"> 
-        <input type="reset" value="Reset" name="Reset"> 
-    </form>
+<div class="rightTab">
+    <p><em>*</em> Any comments or suggestions:<br><br>  
+        <textarea cols="100" rows="10" maxlength="100" name="Comment"></textarea></p>
 </div>
-
+        <button type="submit" value="send" name="Submit"> SUBMIT
+    </form>
+   
 </body>
 <script src="index.js"></script> 
-<!-- <footer>
-    <p class="footertag"> © 2020 by Pratikshya Pandey</p>
-</footer>  -->
 
 </html>
