@@ -3,59 +3,61 @@
 <head>
 <title>SURVEY FORM</title>
 <link rel="stylesheet" href="index.css"></links>
+
 <body>
 
 <h1 id="title">SURVEY FORM</h1>
-<p class="description">Congratulations on completing Full Stack Online Program of freeCodeCamp </p>
 <hr>
 
 <p>Note:<em>*</em> Required</p>
 
 <form name="surveyform"   method="post" onsubmit="return validateForm()">  
- <div class="info">
-
- <label><em>*</em> First Name:</label><br>
-   <input type="text required" name="FirstName" id="name" placeholder="Enter your first name">
-<br>
-<br>
-   <label><em>*</em> Last Name:</label><br>
-   <input type="text required" name="Lastname" id="lastname" placeholder="Enter your last-name">
-<br>
-<br>
-
- <label><em>*</em> Email:</label><br>
- <input type="text required" name="EMail" id="email" placeholder="Enter your email-address">
- <br>
- <br>
-
- <label>Phone:</label><br>
- <input type="number"
- name="Phone" id="phone">
- <br>
- <br>
  
- <label>LinkedIn Profile</label><br>
- <input type="text" name="linkedIn" id="linkedIn">
- <br>
- <br>
+<label><em>*</em> First Name:</label>
+<input type="text required" name="FirstName" id="name" placeholder="Enter your first name"  class="feildset"><br><br>
 
- <label>Website</label><br>
- <input type="text" name="Website" id="website">
-<br>
-<br>
- <p><em>*</em> How likely is it that you would recommend us to a friend?</p>
 
-        <li class="radio"><label>Definitely<input type="radio" id="recommend-definitely"name="recommend" value="1" class="recommend">             </label></li>
-        <li class="radio"><label>Maybe<input type="radio" id="recommend-maybe" name="recommend" value="2" class="recommend"></label>               </li>
-        <li class="radio"><label>Not Sure<input type="radio" id="recommend-not-sure" name="recommend" value="3" class="recommend">                 </label></li>
+<label><em>*</em> Last Name:</label>
+<input type="text required" name="Lastname" id="lastname" placeholder="Enter your last-name" class="feildset"><br><br>
+
+ <label><em>*</em> Email:</label>
+ <input type="text required" name="EMail" id="email" placeholder="Enter your email-address" class="feildset"><br><br>
+ 
+ <label>Phone:</label>
+ <input type="number" name="phone" id="phone" placeholder="Enter your phone-number" class="feildset"><br><br>
+
+ <label>LinkedIn Profile</label>
+ <input type="text" name="text" id="LinkedIn" placeholder="Enter your LinkedIn Public Profile URL" class="feildset"><br><br>
+
+ <label>Website:</label>
+ <input type="text" name="text" id="website" placeholder="Enter your Website URL" class="feildset"><br><br>
+ 
+
+
+ <p><em>*</em> Would you recommend our website to a friend?</p>
+
+ <label><input
+   name="recommend"
+   value="1"
+   type="radio"
+   class="radio" 
+ />Definitely</label
+>
+
+<label><input name="recommend"  value="1" type="radio" class="radio" >Maybe</label>          
+<label><input name="recommend"  value="1" type="radio" class="radio" >Not Sure</label>  
+
 <div class="rightTab">
-    <p><em>*</em> Any comments or suggestions:<br><br>  
-        <textarea cols="100" rows="10" maxlength="100" name="Comment"></textarea></p>
+    <p><em>*</em> Any comments or suggestions:<br><br> 
+        <textarea cols="100" rows="10" maxlength="100" name="Comment" placeholder="Enter your comments here ..."></textarea></p>
 </div>
-        <button type="submit" value="send" name="Submit"> SUBMIT
-    </form>
+
+<button type="submit" value="send" name="Submit"> SUBMIT
+    
+</form>
    
 </body>
+
 <script src="index.js"></script> 
 
 </html>

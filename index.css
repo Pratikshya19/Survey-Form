@@ -1,21 +1,40 @@
 html {
-    background-color: grey;
+    background-color: lightpink;
     min-width:100%;
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
- 
 }
 
 body {
-    align-items: center;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding-left: 30px;
-padding-right: 30px;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-    background-color: white;
+font-weight: 400;
+margin: auto;
+width: 60%;
+padding-left: 2vw;
+border: 1px solid #CCC;
+border-radius: 1em;
+background-color: white;
+padding-bottom: 30px;
 }
+
+@media (min-width: 576px) {
+    body {
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    body {
+      max-width: 100%;
+    }
+  }
+
+em {
+    color: red;
+}
+label {
+    align-items: center;
+}
+
 #title {
     padding-top: 10px;
     font-size: 1.8em;
@@ -23,36 +42,32 @@ padding-right: 30px;
     text-transform: capitalize;
     color: black;
 }
-.description {
-    text-align: center;
-    font-size: 1.3rem;
-}
-em {
-    color: red;
-}
 
-/* textarea {
-    max-width: 350px;
-    max-height: 200px;
-} */
+
 .rightTab {
     width: 80%;
 }
 
-input{
-    width: 150px;
-    height: 20px;
+ .feildset {
+    width: 50vw;
+    height: 5vh;
+
+} 
+
+label {
+    display: flex;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+
+textarea {
+    width: 50vw;
+    height: 10vh;
 }
-.radio {
-    position: relative;
-  display: block;
-  padding-bottom: 10px;
-  margin-left: 10px;
-  
-}
+
 button {
-    background-color: red;
-    width: 150px;
-    height: 40px;
-   align-content: center;
-}
+    align-content: center;
+    background-color: lightgrey;
+    width: 50vw;
+    height: 5.5vh;
+   }
